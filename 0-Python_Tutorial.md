@@ -20,7 +20,6 @@ Python interpreter 具備高度擴充性 (用 C 或 C++)。
 
 這個 tutorial 介紹了 Python 基本觀念及 Python 功能。
 
-For a description of standard objects and modules, see . The Python Language Reference gives a more formal definition of the language. To write extensions in C or C++, read Extending and Embedding the Python Interpreter and Python/C API Reference Manual. There are also several books covering Python in depth.
 
 想了解 standard objects 及 modules 可以看 https://docs.python.org/2/reference/index.html#reference-index
 想了解 formal definition 可以看 https://docs.python.org/2/reference/index.html#reference-index
