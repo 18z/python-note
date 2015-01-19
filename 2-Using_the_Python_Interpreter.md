@@ -45,10 +45,8 @@ python -m module [arg]
 
 2.1.2. 互動模式
 
-When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs (>>>); for continuation lines it prompts with the secondary prompt, by default three dots (...). The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt:
-
->>> 開頭就是互動模式的拉～
-... 開頭就是接續上面的 prompts 。例如上面有 if statement。詳情看下例
+`>>>` 開頭就是互動模式的拉～
+`...` 開頭就是接續上面的 prompts 。例如上面有 if statement。詳情看下例
 
 ```bash
 >>> the_world_is_flat = 1
@@ -57,3 +55,29 @@ When commands are read from a tty, the interpreter is said to be in interactive 
 ...
 Be careful not to fall off!
 ```
+
+2.2 Interpreter 跟它的環境
+
+2.2.1 source code 編碼
+
+在 #! 後面定義編碼
+
+```python
+# -*- coding: encoding -*-
+```
+
+有哪些 encodings 可以用？可以參考 python Library Reference 的 codecs。
+
+例如：code 裡面會用到 Euro currency symbol 時，就可使用 ISO-8859-15 編碼。
+
+```python
+# -*- coding: iso-8859-15 -*-
+
+currency = u"€"
+print ord(currency)
+```
+
+若 editor 支援將檔案以 UTF-8 格式存擋，就可以不用做編碼宣告。
+UTF-8 支援世界上大多數語言。
+
+
